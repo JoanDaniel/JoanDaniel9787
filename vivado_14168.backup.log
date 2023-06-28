@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar 27 11:01:12 2023
+# Process ID: 14168
+# Current directory: C:/Users/Joan Daniel A/Downloads/zynq_social_distancing FINAL/zynq_social_distancing/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5032 C:\Users\Joan Daniel A\Downloads\zynq_social_distancing FINAL\zynq_social_distancing\project_1\project_1.xpr
+# Log file: C:/Users/Joan Daniel A/Downloads/zynq_social_distancing FINAL/zynq_social_distancing/project_1/vivado.log
+# Journal file: C:/Users/Joan Daniel A/Downloads/zynq_social_distancing FINAL/zynq_social_distancing/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Joan Daniel A/Downloads/zynq_social_distancing FINAL/zynq_social_distancing/project_1/project_1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Joan Daniel A/Downloads/zynq_social_distancing FINAL/zynq_social_distancing/project_1'
+INFO: [Project 1-313] Project file moved from 'D:/zynq_social_distancing/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for allaboutfpga.com:edgez7_10:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A288EEA
+open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1971.109 ; gain = 1124.945
+set_property PROGRAM.FILE {C:/Users/Joan Daniel A/Downloads/zynq_social_distancing FINAL/zynq_social_distancing/project_1/project_1.runs/impl_1/Top_Range_Sensor.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/Joan Daniel A/Downloads/zynq_social_distancing FINAL/zynq_social_distancing/project_1/project_1.runs/impl_1/Top_Range_Sensor.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319A288EEA
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 11:13:48 2023...
